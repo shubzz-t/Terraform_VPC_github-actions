@@ -35,3 +35,4 @@ jobs:
           id: apply
           run: terraform destroy --auto-approve
           working-directory: ./VPC_Terraform_with_Modules
+          
