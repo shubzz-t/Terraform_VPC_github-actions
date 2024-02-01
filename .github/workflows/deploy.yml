@@ -1,0 +1,11 @@
+name: "Terraform cicd for deploying aws resources"
+run-name: ${{ github.actor }} has triggered the pipeline 
+
+on:
+  push:
+    branches:
+      - 'main'
+
+env:
+  AWS_ACCESS_KEY: ${{ secrets.AWS_ACCESS_KEY }}
+  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
