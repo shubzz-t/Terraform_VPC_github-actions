@@ -14,6 +14,6 @@ data "aws_ami" "amazon-2" {
 
 }
 
-data "aws_availability_zone" "available" {
+data "aws_availability_zones" "available" {
   state = "available"
 }
